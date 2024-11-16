@@ -23,7 +23,7 @@ export default function Items() {
   const [loading, setLoading] = useState(false); // Add loading state
 
   const goBack = () => {
-    router.replace("/(admin)/home");
+    router.replace("/(core)/home");
   };
 
   const fetchItems = useCallback(async () => {
@@ -103,7 +103,7 @@ export default function Items() {
         {user?.admin ? null : (
           <Returnbutton
           icon='cart'
-            goBack={() => router.replace("/(admin)/cart")}
+            goBack={() => router.replace("/(core)/cart")}
             style={styles.goBackButton}
             text={`Cart ${cart.length}`}
           />

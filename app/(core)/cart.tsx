@@ -21,7 +21,7 @@ export default function Cart() {
             // Call placeOrder function with user ID and cart items
             const newOrder = await placeOrder(user.userId, cart, calculateTotalCost());
             Alert.alert("Success", "Order placed successfully!");
-            router.replace("/(admin)/home");
+            router.replace("/(core)/home");
             setCart([])
 
             // You may also want to clear the cart here after placing the order
@@ -53,7 +53,7 @@ export default function Cart() {
     iconColor={MD3Colors.secondary50}
     size={40}
     onPress={() => {
-      router.replace("/(admin)/items");
+      router.replace("/(core)/items");
     }}
   />
         <Text style={styles.title}>Your cart</Text>

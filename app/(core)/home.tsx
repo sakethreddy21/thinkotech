@@ -34,13 +34,13 @@ export default function HomeScreen() {
       <Text style={styles.title}>Welcome to the Home Page!</Text>
       <TouchableOpacity
   style={styles.mainButton}
-  onPress={() => router.replace("/(admin)/items")}
+  onPress={() => router.replace("/(core)/items")}
 >
   <Text style={styles.buttonText}>Items</Text>
 </TouchableOpacity>
 <TouchableOpacity
   style={styles.mainButton}
-  onPress={() => router.replace("/(admin)/orders")}
+  onPress={() => router.replace("/(core)/orders")}
 >
   <Text style={styles.buttonText}>Orders</Text>
 </TouchableOpacity>

@@ -18,7 +18,7 @@ export default function Orders() {
   const { admin, userId } = user || {}; // Destructure to simplify the code
 
   const goBack = () => {
-    router.replace('/(admin)/home');
+    router.replace('/(core)/home');
   };
 
   const fetchOrders = useCallback(() => {
